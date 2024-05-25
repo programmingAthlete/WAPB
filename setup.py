@@ -16,6 +16,7 @@ setup(
     description="Algebraic Immunity on fixed Hamming Weight",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    url="https://github.com/programmingAthlete/WAPB.git",
     packages=find_packages(where=".", include=["WAPB*"]),
     zip_safe=False
 )
