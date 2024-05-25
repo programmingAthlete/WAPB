@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
+from parse_to_python import convert_sage_files_to_python
 
 __version__ = "0.0.0"
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-with open("requirements.txt", "r") as f:
-     requirements = f.read().splitlines()
+convert_sage_files_to_python("WAPB")
 
 
 setup(
