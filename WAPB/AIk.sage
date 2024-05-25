@@ -1,4 +1,4 @@
-
+load("GM22c/stat_NL.sage")
 
 def build_G(n,d):
         P = partition(n)
