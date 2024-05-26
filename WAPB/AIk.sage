@@ -43,6 +43,9 @@ def weightwise_annihilator(f,k,d,G=0,P=0):
 def AIk(k,f):
     n = f.nvariables()
     P = partition(n)
+    tb = f.truth_table()
+    if len(set([tb[el] for el in P[k]])) == 1:
+        return 0
     a0,a1,d =0,0,1
     while a0==0 and a1==0 and d<n:
         a0,a1,A0,A1=weightwise_annihilator(f,k,d,G=0,P=P)
