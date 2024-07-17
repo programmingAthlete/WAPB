@@ -13,7 +13,7 @@ jobs:
       - name: Set Version
         id: version
         run: |
-          echo "::set-output name=PKG_VERSION::$(pip show crypto_pkg | grep Version | sed 's/Version://g' | sed 's/ //g')"
+          echo "::set-output name=PKG_VERSION::$(pip show WAPB | grep Version | sed 's/Version://g' | sed 's/ //g')"
       - name: Crete Release
         id: create_release
         uses: actions/create-release@v1
