@@ -27,8 +27,8 @@ load("AI.sage")#compute algebraic immunity using the uppbound n/2
 load("AIk.sage")#
 
 load("others/cmr.sage")#building CMR functions
-load("others/LM-fun.sage")#building LM functions
-load("others/TL-fun.sage")#building TL functions
+load("others/LM_fun.sage")#building LM functions
+load("others/TL_fun.sage")#building TL functions
 
 load("GM22b/constructions_GM22b.sage")#WAPB constuctions from the paper GM22b
 load("GM22b/hybrid16.sage")#building h16 hybrid function
